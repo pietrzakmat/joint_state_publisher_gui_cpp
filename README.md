@@ -15,7 +15,7 @@ Proceed in your workspace (i.e. cd ~/dev_ws/src):
  ```
  git clone https://github.com/UniversalRobots/Universal_Robots_ROS2_Description
  ```
-### Add modified launch script to Universal Robot package.
+### Add modified launch script to Universal Robot package
 The modified launch script is necessary due to the fact that original one launches joint_state_publisher written in Python which constantly publishes its state and effectively modifies the setting from "joint_state_publisher_gui_cpp". Therefore it needs to be supressed.
  ```
  mv ~/dev_ws/src/joint_state_publisher_gui_cpp/launch/view_ur_no_pub.launch.py ~/dev_ws/src/Universal_Robots_ROS2_Description/launch/view_ur_no_pub.launch.py 
