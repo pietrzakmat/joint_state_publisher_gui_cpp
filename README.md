@@ -18,6 +18,7 @@ colcon build --packages-select joint_state_publisher_gui_cpp
  mv ~/dev_ws/src/joint_state_publisher_gui_cpp/launch/view_ur_no_pub.launch.py ~/dev_ws/src/Universal_Robots_ROS2_Description/launch/view_ur_no_pub.launch.py 
  colcon build --packages-select ur_description
  ```
+
 * Run:
  ```
  . install/setup.bash && ros2 launch joint_state_publisher_gui_cpp ur10_and_pkg.launch.py 
