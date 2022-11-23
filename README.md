@@ -1,7 +1,8 @@
 # joint_state_publisher_gui_cpp
 
 ## General info
-This is **ROS2** joint_state_publisher_gui for CPP fans. It is built with Qt5.
+This is **ROS2** joint_state_publisher_gui for CPP fans. In **ROS2** only Python version is available.
+It is built with Qt5.
 
 ## Setup
 In your workspace (i.e. cd ~/dev_ws/src): 
