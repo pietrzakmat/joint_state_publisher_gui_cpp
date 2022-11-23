@@ -5,8 +5,14 @@ This is **ROS2** joint_state_publisher_gui for CPP fans. It is built with Qt5.
 
 ## Setup
 In your workspace (i.e. cd ~/dev_ws/src): 
+
+#### Clone
 ```
 git clone https://github.com/pietrzakmat/joint_state_publisher_gui_cpp
+```
+
+#### Build
+```
 colcon build --packages-select joint_state_publisher_gui_cpp
 ```
 ##  Example usage: UR10 model from Universal Robots
