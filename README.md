@@ -35,9 +35,9 @@ The modified launch script is necessary due to the fact that original one launch
  ```
 sudo apt install ros-<your-ros-distribution>-xacro
  ```
- I.e.
+ I.e. for ROS2 humble:
  ```
- sudo apt install ros-<your-ros-distribution>-xacro
+ sudo apt install ros-humble-xacro
  ```
 ### Install & Launch
  ```
