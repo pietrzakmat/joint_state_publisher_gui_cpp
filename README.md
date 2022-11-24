@@ -31,7 +31,14 @@ The modified launch script is necessary due to the fact that original one launch
  ```
  colcon build --packages-select ur_description
  ```
-
+### The **Xacro** package need to be installed in the system:
+ ```
+sudo apt install ros-<your-ros-distribution>-xacro
+ ```
+ I.e.
+ ```
+ sudo apt install ros-<your-ros-distribution>-xacro
+ ```
 ### Install & Launch
  ```
  . install/setup.bash && ros2 launch joint_state_publisher_gui_cpp ur10_and_pkg.launch.py 
