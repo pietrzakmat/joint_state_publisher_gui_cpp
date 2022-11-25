@@ -11,7 +11,6 @@ In your workspace (i.e. cd ~/dev_ws/src):
 ```
 git clone https://github.com/pietrzakmat/joint_state_publisher_gui_cpp
 ```
-
 #### Build
 ```
 colcon build --packages-select joint_state_publisher_gui_cpp
@@ -27,17 +26,27 @@ The modified launch script is necessary due to the fact that original one launch
  ```
  mv ~/dev_ws/src/joint_state_publisher_gui_cpp/launch/view_ur_no_pub.launch.py ~/dev_ws/src/Universal_Robots_ROS2_Description/launch/view_ur_no_pub.launch.py 
  ```
-### Build ur_description package
- ```
- colcon build --packages-select ur_description
- ```
-### The **Xacro** package need to be installed in the system:
+ 
+### Dependences required to run the packages:
+#### **Xacro** package
  ```
 sudo apt install ros-<your-ros-distribution>-xacro
  ```
  I.e. for ROS2 humble:
  ```
  sudo apt install ros-humble-xacro
+ ```
+ #### **Robot state publisher** package
+ ```
+sudo apt install ros-<your-ros-distribution>-robot-state-publisher
+ ```
+ I.e. for ROS2 humble:
+ ```
+ sudo apt install ros-humble-robot-state-publisher
+ ```
+### Build ur_description package
+ ```
+ colcon build --packages-select ur_description
  ```
 ### Install & Launch
  ```
